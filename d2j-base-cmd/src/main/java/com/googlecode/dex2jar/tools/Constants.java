@@ -8,8 +8,6 @@ public final class Constants {
         throw new UnsupportedOperationException();
     }
 
-    public static final int MAX_JAVA_VERSION = 26;
-
     public static final int[] JAVA_VERSIONS = new int[]{
             0,
             Opcodes.V1_1,
@@ -38,7 +36,12 @@ public final class Constants {
             Opcodes.V24,
             Opcodes.V25,
             Opcodes.V26,
+            Opcodes.V27,
     };
+
+    // Cannot be dependent on JAVA_VERSIONS.length since
+    // it needs to be constant for usage in annotations!
+    public static final int MAX_JAVA_VERSION = 27;
 
     public static final int ASM_VERSION = Opcodes.ASM9;
 
