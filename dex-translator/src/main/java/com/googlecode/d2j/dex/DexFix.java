@@ -193,7 +193,7 @@ public final class DexFix {
                     generatedStringConcat.add(new Stmt1RNode(Op.MOVE_RESULT_OBJECT, register));
 
                     toBeReplaced.put(insn, generatedStringConcat);
-                    maxRegister.set(Math.max(register + 1, maxRegister.get()));
+                    maxRegister.set(Math.max(register + 2, maxRegister.get()));
                 }
             });
 
