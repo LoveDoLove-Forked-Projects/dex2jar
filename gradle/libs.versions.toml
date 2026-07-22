@@ -8,7 +8,7 @@ junit = '5.14.4'
 junit-platform = '1.14.4'
 r8 = '4.0.63' # Newer versions only for Java 11+
 nexus-publish-plugin = '2.0.0'
-shadow-plugin = '9.4.2'
+shadow-plugin = '9.6.0'
 versions-plugin = '0.54.0'
 
 [libraries]
